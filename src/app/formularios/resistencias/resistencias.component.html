@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Resistencias</title>
+    <link rel="stylesheet" href="resistencias.component.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="bandas">
+            <div class="columna">
+                <h3>1ra. Banda</h3>
+                <ul>
+                    <li><input type="radio" name="banda1"> 0</li>
+                    <li><input type="radio" name="banda1"> 1</li>
+                    <li><input type="radio" name="banda1"> 2</li>
+                    <li><input type="radio" name="banda1"> 3</li>
+                    <li><input type="radio" name="banda1"> 4</li>
+                    <li><input type="radio" name="banda1"> 5</li>
+                    <li><input type="radio" name="banda1"> 6</li>
+                    <li><input type="radio" name="banda1"> 7</li>
+                    <li><input type="radio" name="banda1"> 8</li>
+                    <li><input type="radio" name="banda1"> 9</li>
+                </ul>
+            </div>
+
+            <div class="columna">
+                <h3>2da. Banda</h3>
+                <ul>
+                    <li><input type="radio" name="banda2"> 0</li>
+                    <li><input type="radio" name="banda2"> 1</li>
+                    <li><input type="radio" name="banda2"> 2</li>
+                    <li><input type="radio" name="banda2"> 3</li>
+                    <li><input type="radio" name="banda2"> 4</li>
+                    <li><input type="radio" name="banda2"> 5</li>
+                    <li><input type="radio" name="banda2"> 6</li>
+                    <li><input type="radio" name="banda2"> 7</li>
+                    <li><input type="radio" name="banda2"> 8</li>
+                    <li><input type="radio" name="banda2"> 9</li>
+                </ul>
+            </div>
+
+            <div class="columna">
+                <h3>3ra. Banda<br>Multiplicador</h3>
+                <ul>
+                    <li><input type="radio" name="banda3"> x1</li>
+                    <li><input type="radio" name="banda3"> x10</li>
+                    <li><input type="radio" name="banda3"> x100</li>
+                    <li><input type="radio" name="banda3"> x1000</li>
+                    <li><input type="radio" name="banda3"> x10000</li>
+                    <li><input type="radio" name="banda3"> x100000</li>
+                    <li><input type="radio" name="banda3"> x1000000</li>
+                    <li><input type="radio" name="banda3"> x10000000</li>
+                    <li><input type="radio" name="banda3"> x100000000</li>
+                    <li><input type="radio" name="banda3"> x1000000000</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tolerancia">
+            <label><input type="radio" name="tolerancia"> Dorado 5%</label>
+            <label><input type="radio" name="tolerancia"> Plata 10%</label>
+        </div>
+
+        <div class="boton">
+            <button>Calcular</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Color1</th>
+                    <th>Color2</th>
+                    <th>Color3</th>
+                    <th>tolerancia</th>
+                    <th>Valor</th>
+                    <th>Valor máximo</th>
+                    <th>Valor mínimo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

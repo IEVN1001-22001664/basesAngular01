@@ -1,0 +1,62 @@
+
+<head>
+    <meta charset="UTF-8">
+    <title>Decisiones Caso 2 - Cinépolis</title>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <div class="titulo-app">Cinepolis</div>
+        
+        <div class="layout-principal">
+            <div class="layout-izquierdo">
+                <div class="seccion seccion-entradas">
+                    <h3>Entradas</h3>
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input [(ngModel)]="nombre"  type="text" id="nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="compradores">Cantidad Compradores</label>
+                        <input [(ngModel)]="cCompradores" type="text" id="compradores">
+                    </div>
+                    <div class="campo">
+                        <label>Tarjeta Cineco</label>
+                        <div class="radio-opcion">
+                            <input [(ngModel)]="cardCineco" type="radio" id="tarjeta-si" name="tarjeta" value="si">
+                            <label for="tarjeta-si">Si</label>
+                        </div>
+                        <div class="radio-opcion">
+                            <input [(ngModel)]="cardCineco" type="radio" id="tarjeta-no" name="tarjeta" value="no">
+                            <label for="tarjeta-no">No</label>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="boletos">Cantidad De Boletas</label>
+                        <input [(ngModel)]="cBoletos" type="number" id="boletos" max="7">
+                    </div>
+                </div>
+            </div>
+
+            <div class="layout-derecho">
+                <div class="seccion seccion-salidas">
+                    <h3>Salidas</h3>
+                    <div class="campo">
+                        <label for="valor-pagar">Valor a Pagar</label>
+                        <input [(ngModel)]="vPagar" type="text" id="valor-pagar" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="logo-cinepolis">
+            <h1>Cinépolis</h1>
+            <p>LA CAPITAL DEL CINE</p>
+        </div>
+
+        <div class="seccion seccion-acciones">
+            <h3>Acciones</h3>
+            <button (click)="procesar()" class="boton" id="boton-procesar" value="procesar">Procesar</button>
+            <button (click)="salir()" class="boton" id="boton-salir" value="Salir">Salir</button>
+        </div>
+    </div>
+</body>

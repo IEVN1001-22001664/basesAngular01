@@ -1,0 +1,130 @@
+ body {
+            background-color: #003366;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contenedor-principal {
+            width: 80%;
+            max-width: 900px;
+            border: 1px solid #ccc; 
+            padding: 20px;
+            background-color: #003366;
+        }
+
+        .titulo-app {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            padding: 5px 15px;
+            background-color: white;
+            color: #003366;
+            display: inline-block;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-radius: 5px;
+        }
+
+        .seccion {
+            border: 1px solid white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .seccion h3 {
+            margin-top: -30px;
+            padding: 0 10px;
+            display: inline-block;
+            background-color: #003366;
+            font-size: 1.2em;
+        }
+
+        .campo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .campo label {
+            width: 150px;
+            margin-right: 10px;
+        }
+
+        .campo input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 200px;
+        }
+        
+        .seccion-salidas .campo input[type="text"] {
+            width: 250px;
+            background-color: white;
+            color: black;
+        }
+
+        .radio-opcion {
+            margin-right: 15px;
+        }
+
+        .seccion-acciones {
+            text-align: center;
+        }
+
+        .boton {
+            padding: 8px 20px;
+            margin: 0 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+
+        #boton-procesar {
+            background-color: white;
+            color: black;
+        }
+
+        #boton-salir {
+            background-color: #f3f3f3; /* Gris claro */
+            color: black;
+        }
+
+        .logo-cinepolis {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .logo-cinepolis h1 {
+            font-size: 5em;
+            margin: 0;
+            line-height: 1;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+
+        .logo-cinepolis p {
+            font-size: 1.5em;
+            margin: 0;
+            letter-spacing: 2px;
+            font-weight: normal;
+        }
+
+        .layout-principal {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .layout-izquierdo {
+            width: 60%;
+        }
+
+        .layout-derecho {
+            width: 35%;
+        }
